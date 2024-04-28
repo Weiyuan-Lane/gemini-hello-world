@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Vertex AI Chatbot</title>
+  </head>
+
+  <body>
+    <h1>Vertex AI Chatbot</h1>
+    <form action="/chat" method="POST">
+      <label for="chatInput">Your message:</label>
+      <input type="text" id="chatInput" name="chatInput" />
+      <input type="submit" value="Send" />
+    </form>
+
+    <p id="chatPrevious">{{chatInput}}</p>
+    <p id="chatOutput">{{{chatOutput}}}</p>
+  </body>
+</html>
